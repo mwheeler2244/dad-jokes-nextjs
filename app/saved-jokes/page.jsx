@@ -1,6 +1,6 @@
-import { saveDataJoke } from "../lib/actions";
 import { db } from "../lib/db";
 import { auth } from "@clerk/nextjs/server";
+import Link from "next/link";
 
 export default async function saveJokes() {
   const { userId: clerkUserId } = await auth();
@@ -28,6 +28,9 @@ export default async function saveJokes() {
 
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-300 via-yellow-300 to-orange-300 py-10 px-6">
+        <Link className=" text-2xl" href="/">
+          Back ←
+        </Link>
         <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-xl p-8">
           <h1 className="text-5xl font-extrabold text-pink-600 mb-8 text-center">
             Your Saved Jokes!
