@@ -13,8 +13,3 @@ A fun web app that fetches dad jokes from the [icanhazdadjoke.com](https://icanh
 ## 🌐 **Live Demo**
 Check out the live application here: [**Generate Dad Jokes**](https://dad-jokes-nextjs-bsjdwdcm0-mikes-projects-39d4e706.vercel.app)
 
-## Tech Stack
-- **Frontend**: Next.js with server-side rendering (`use server`)
-- **Authentication**: Clerk for secure user authentication
-- **Database**: Neon PostgreSQL for saving jokes
-- **Deployment**: Vercel for hosting and deployment
